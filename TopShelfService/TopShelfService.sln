@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TopShelfService", "TopShelfService.csproj", "{A43452AC-0840-4F7C-AA1C-5ACF2FF33EFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A43452AC-0840-4F7C-AA1C-5ACF2FF33EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A43452AC-0840-4F7C-AA1C-5ACF2FF33EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A43452AC-0840-4F7C-AA1C-5ACF2FF33EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A43452AC-0840-4F7C-AA1C-5ACF2FF33EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B7A5C8E-36A2-4BBF-988B-E686CFB1DB31}
+	EndGlobalSection
+EndGlobal

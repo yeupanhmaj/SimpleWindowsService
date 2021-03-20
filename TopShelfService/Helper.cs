@@ -16,30 +16,14 @@ namespace TopShelfService
         public Helper()
         {
             //timer 10s, mỗi 10s sẽ tự động reset
+            //interval for timmer, you can setup manually or using config file
             var interval = Settings.Default.Interval;
-
+            //initial timer,auto reset when elapsed
             _timer = new Timer(interval == 0 ? 60 * 60 * 1000 : interval) { AutoReset = true };
+            //on elapsed event, i use lambda, you can change it to normal delegate if you want
             _timer.Elapsed += (sender, e) =>
             {
-                //app name và string path
-                //var appname = Settings.Default.AppName;
-                //var path = Settings.Default.StringPath;
-                //var appname2 = Settings.Default.AppName2;
-                //var path2 = Settings.Default.StringPath2;
-
-                //foreach (var process in Process.GetProcessesByName(appname))
-                //{
-                //    process.Kill();
-                //    WriteLogError("Stop " + appname);
-                //}
-                //foreach (var process in Process.GetProcessesByName(appname2))
-                //{
-                //    process.Kill();
-                //    WriteLogError("Stop " + appname2);
-                //}
-                //Process.Start(path);
-                //Process.Start(path2);
-                //WriteLogError("Start " + path + "," + path2);
+                //do some thing on timer elapsed
 
             };
         }
@@ -55,7 +39,7 @@ namespace TopShelfService
             _timer.Stop();
 
         }
-        // Ghi lại Log File ở các bước thực thi Service mỗi 60s
+        //write log
         public static void WriteLogError(string message)
         {
             StreamWriter sw = null;
@@ -72,7 +56,7 @@ namespace TopShelfService
                 // ignored
             }
         }
-        //xóa log mỗi khi quá nhiều
+        //delete log when to big
         private static void deleteLog(string file_path)
         {
             try
