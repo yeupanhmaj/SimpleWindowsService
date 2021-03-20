@@ -5,5 +5,5 @@ Open Cmd -> cd to folder contain .exe file
 Run the command below
 
 ```bash
-[{appname}.exe] install start
+{appname}.exe install start
 ```
